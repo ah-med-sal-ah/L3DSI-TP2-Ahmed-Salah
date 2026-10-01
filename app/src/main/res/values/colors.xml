@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="imc_orange">#FF9800</color>
+    <color name="imc_vert">#4CAF50</color>
+    <color name="imc_rouge">#F44336</color>
+    <color name="imc_rouge_fonce">#B71C1C</color>
+</resources>

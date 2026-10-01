@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewTitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titre"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Weight -->
+        <EditText
+            android:id="@+id/editTextPoids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_poids"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Height -->
+        <EditText
+            android:id="@+id/editTextTaille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_taille"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Buttons side by side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCalculer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/bouton_calculer" />
+
+            <Button
+                android:id="@+id/buttonEffacer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/bouton_effacer" />
+        </LinearLayout>
+
+        <!-- IMC value -->
+        <TextView
+            android:id="@+id/textViewImc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/textViewCategorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>
